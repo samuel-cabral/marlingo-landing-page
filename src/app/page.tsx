@@ -5,8 +5,8 @@ import { JoinEmailList } from '@/components/join-email-list'
 
 export default function Home() {
   return (
-    <main className="relative mb-10 mt-12 flex flex-col items-start justify-between md:flex-row">
-      <aside className="">
+    <main className="relative mb-12 mt-12 flex flex-col items-start justify-between lg:flex-row">
+      <aside>
         <Image
           src="/images/sphere.svg"
           alt="3d glassy ribbed concrete sphere"
@@ -15,8 +15,8 @@ export default function Home() {
         />
       </aside>
 
-      <section className="">
-        <div className="absolute left-1/2 top-8 w-full max-w-7xl -translate-x-1/2 -translate-y-1/4 items-center justify-between px-6 md:top-1/4">
+      <section className="absolute left-1/2 top-20 w-full max-w-7xl -translate-x-1/2 -translate-y-1/4 lg:top-1/4">
+        <div className="flex flex-col items-start px-6">
           <h1 className="text-playfair-display text-4xl font-medium sm:text-5xl md:text-6xl">
             <p>Where Tomorrow&apos;s</p>
             <p>Finance Becomes</p>
@@ -27,17 +27,17 @@ export default function Home() {
             Euro account and crypto wallet in one app.
           </p>
 
-          <div className="mt-6 md:hidden">
+          <div className="mt-6 lg:hidden">
             <ComingSoon />
           </div>
 
-          <div className="mt-10 hidden md:block">
+          <div className="mt-10 hidden lg:block">
             <JoinEmailList />
           </div>
         </div>
       </section>
 
-      <aside className="">
+      <aside>
         <Image
           src="/images/ui-preview.svg"
           alt="Marlingo UI preview"
