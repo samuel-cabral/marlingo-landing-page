@@ -64,6 +64,14 @@
     --input: 12 6.5% 15.1%;
     --ring: 24 5.7% 82.9%;
   }
+
+  .text-inter {
+    font-family: var(--font-inter);
+  }
+
+  .text-playfair-display {
+    font-family: var(--font-playfair-display);
+  }
 }
  
 @layer base {

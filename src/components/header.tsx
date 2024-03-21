@@ -8,8 +8,8 @@ import { Button } from './ui/button'
 
 export function Header() {
   return (
-    <header className="mt-16 flex w-full items-center px-6 md:mt-6">
-      <nav className="mx-auto flex w-full max-w-7xl items-center justify-between">
+    <header className="mt-10 flex w-full items-center md:mt-6">
+      <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-6">
         <div className="flex items-center gap-4">
           <Link href="/">
             <Image
