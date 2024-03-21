@@ -2,12 +2,16 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 // eslint-disable-next-line camelcase
-import { Inter } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 
 import { Header } from '@/components/header'
 import { cn } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair-display',
+})
 
 export const metadata: Metadata = {
   title: 'Marlingo',
@@ -23,8 +27,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased',
+          'min-h-screen bg-stone-50 font-sans antialiased',
           inter.variable,
+          playfairDisplay.variable,
         )}
       >
         <Header />
