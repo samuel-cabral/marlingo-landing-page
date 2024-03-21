@@ -4,8 +4,10 @@ import type { Metadata } from 'next'
 // eslint-disable-next-line camelcase
 import { Inter, Playfair_Display } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+import { Header } from '@/components/header'
+import { cn } from '@/lib/utils'
 
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair-display',
@@ -23,7 +25,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.variable}>{children}</body>
+      <body
+        className={cn(
+          'min-h-screen w-full bg-stone-50 font-sans font-light tracking-tight antialiased',
+          inter.variable,
+          playfairDisplay.variable,
+        )}
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
