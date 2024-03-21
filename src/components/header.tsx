@@ -1,10 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { AccountButtons } from './account-buttons'
+import { AccountButtonsMobile } from './account-buttons-mobile'
 import { ComingSoon } from './coming-soon'
-import { CreateAccountButton } from './create-account-button'
-import { CreateAccountButtonMobile } from './create-account-button-mobile'
-import { Button } from './ui/button'
 
 export function Header() {
   return (
@@ -20,30 +19,15 @@ export function Header() {
             />
           </Link>
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <ComingSoon />
           </div>
         </div>
 
-        <div
-          id="account-buttons"
-          className="hidden sm:flex sm:items-center sm:gap-3"
-        >
-          <Button
-            asChild
-            variant="ghost"
-            className="hidden gap-2 bg-white text-purple-500 sm:block"
-          >
-            <Link href="/sign-in" className="text-primary">
-              Sign in
-            </Link>
-          </Button>
-
-          <CreateAccountButton />
-        </div>
+        <AccountButtons />
 
         <div className="sm:hidden">
-          <CreateAccountButtonMobile />
+          <AccountButtonsMobile />
         </div>
       </nav>
     </header>

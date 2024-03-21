@@ -22,8 +22,9 @@ export function CreateAccountButton() {
             <span>Create account</span>
           </Button>
         </TooltipTrigger>
-        <TooltipContent className="text-bg bg-foreground ">
-          <p>Coming soon</p>
+        <TooltipContent className="border-0 bg-foreground">
+          <div className="absolute left-1/2 top-0 -z-10 h-4 w-4 -translate-x-2 rotate-45 bg-foreground" />
+          <p className="text-background">Coming soon</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
