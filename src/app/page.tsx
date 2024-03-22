@@ -43,7 +43,7 @@ export default function Home() {
           alt="Marlingo UI preview"
           width={960}
           height={672}
-          className="-mt-32 ml-4 md:mt-0"
+          className="-mt-32 ml-auto md:mt-0"
         />
       </aside>
 
